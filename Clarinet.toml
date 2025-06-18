@@ -1,0 +1,23 @@
+[project]
+name = 'Blockchain-Land-Dispute-Arbitration'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.Blockchain-Land-Dispute-Arbitration]
+path = 'contracts/Blockchain-Land-Dispute-Arbitration.clar'
+clarity_version = 3
+epoch = 3.1
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[repl.remote_data]
+enabled = false
+api_url = 'https://api.hiro.so'
